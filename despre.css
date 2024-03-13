@@ -1,0 +1,138 @@
+body {
+    font-family: 'Inika', serif;
+    color: rgba(233, 233, 233, 0.94);
+    background-image: url('https://i.ibb.co/KGd312Z/bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #39edf3db;
+    border: 2px solid rgba(75, 216, 216, 0.362);
+    padding: 10px 15px;
+    border-radius: 10px 25px;
+    box-shadow: inset 0 0 10px rgba(234, 255, 255, 0.521);
+    background-color: transparent;
+    z-index: 10; /* Asigură că logo-ul este deasupra nav-ului */
+    position: absolute;
+    left: 2rem; 
+     
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+
+
+     
+    .nav {
+        display: flex; /* Afișează elementele navbar-ului pe orizontală */
+        justify-content: center; /* Centrează elementele navbar-ului */
+        align-items: flex-start;
+        list-style: none; /* Elimină marcatorii de listă */
+    }
+    
+    .nav li {
+        margin: 0 20px; /* Spațiere între elementele listei */
+    }
+    
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        display: inline-flex;
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    
+    .nav a:hover, .nav a:focus {
+        color: rgb(0, 166, 255);
+        background-color: #9898986a;
+        border-radius: 5px;
+    }
+    
+    .services-section {
+        padding: 2rem 10%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+    .service {
+        background-color: #ffffff27;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    
+    .service h2 {
+        color: #63aefe;
+        margin-top: 0;
+    }
+    
+    .service h1 {
+        text-align: center;
+    }
+
+
+
+.about h2 {
+    text-align: center;
+    background-color: rgba(149, 149, 219, 0.339);
+}
+
+p {
+    padding: 50px 15rem;
+    background-color: rgba(232, 214, 184, 0.112);
+    width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: rgba(160, 236, 255, 0.864);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .logo, .nav a {
+        font-size: 20px; /* Reduce font-size pentru ecrane medii */
+        position: static;
+    }
+
+    .nav li {
+        margin: 0 10px; /* Reduce spațiul între elementele navbar pentru ecrane medii */
+    }
+
+    .services-section, .service, .about h2, p {
+        padding: 1rem; /* Reduce padding-ul pentru ecrane medii */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 15px; /* Reduce font-size pentru ecrane mici */
+        left: 1rem; /* Ajustează poziția logo-ului pentru a economisi spațiu */
+        position: static;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav li {
+        margin: 5px 0; /* Reduce spațiul între elementele navbar pentru ecrane mici */
+    }
+
+    .services-section, .service, .about h2, p {
+        padding: 0.5rem; /* Reduce și mai mult padding-ul pentru ecrane foarte mici */
+    }
+}
